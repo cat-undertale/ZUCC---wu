@@ -63,7 +63,7 @@ def sign(school_id, password, auto_position, vaccine):
                 r = requests.post(url, cookies=cookies, data=data, headers=headers, timeout=30)
                 res = r.json()
                 if res['code'] == 1000:
-                    return '打卡成功'
+                    return '打卡成功，吴嘉琇'
                 elif res['code'] == 14801:
                     return '今日已打卡'
                 else:
